@@ -1,27 +1,32 @@
-import {useContext} from 'react'
-import { Container } from './style'
+import { useContext } from 'react'
+import { Container ,Content} from './style'
 import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
-
+import { colorsDefault } from '../../style/colorsDefault'
 
 interface Props {
   toggleTheme(): void
 }
-const Header = ({toggleTheme}: Props) => {
+const Header = ({ toggleTheme }: Props) => {
 
-  const {colors,title} = useContext(ThemeContext)
+  const { colors, title } = useContext(ThemeContext)
   return (
     <Container>
-      <h1>Social Media Dashboard</h1>
+     <Content>
+       <div>
+          <h1>Social Media Dashboard</h1>
+          <span>Total</span>
+       </div>
+          <Switch
+            checked={title === 'dark'}
+            onChange={toggleTheme}
+            checkedIcon={false}
+            uncheckedIcon={false}
+          />
 
-      <Switch
-      checked={title === 'dark'}
-      onChange={toggleTheme}
-      checkedIcon={false}
-      uncheckedIcon={false}
-      onColor={colors.veryDarkBlue}
-      />
-      
+       </Content>
+     
+
     </Container>
   )
 }

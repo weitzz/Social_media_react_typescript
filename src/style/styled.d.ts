@@ -9,6 +9,25 @@ declare module 'styled-components'{
     lightGrayishBlue:string;
     darkGrayishBlue:string;
     veryDarkBlue:string;
+
+    bg:string;
+    topBg:string;
+    cardBg:string;
+    textPrimary:string;
+    textSecondary:string;
+    toggle: string;
+
   }
+  }
+
+
+  export interface colorsDefault {
+    toggle:string;
+limeGreen:string;
+ brightRed: string;
+ facebook: string;
+ twitter: string
+ instagram: string;
+ youTube:string
   }
 }

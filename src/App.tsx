@@ -1,7 +1,7 @@
 
 import { ThemeProvider,DefaultTheme } from 'styled-components';
 import Header from './components/Header';
-import Main from './components/Main';
+import Dashboard from './components/Dashboard'
 import Global from './style/Global';
 import light from './style/themes/light';
 import dark from './style/themes/dark';
@@ -18,7 +18,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Global />
       <Header toggleTheme={toggleTheme}/>
-      <Main />
+      <Dashboard />
       </ThemeProvider>
   );
 }
