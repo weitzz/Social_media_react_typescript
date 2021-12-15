@@ -3,9 +3,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   gap: 2rem;
   margin-top: -10rem;
+  @media(min-width: 768px){
+  grid-template-columns: 1fr 1fr 1fr 1fr
+}
 
   .card {
     background: ${props => props.theme.colors.cardBg}; 
@@ -50,6 +53,11 @@ export const Container = styled.div`
    justify-content: center;
    color: ${props => props.theme.colors.textSecondary};
    padding: 1rem 0 1rem 0;
+
+   p{
+     margin-left: 8px ;
+     
+   }
    
  }
 
@@ -77,6 +85,15 @@ footer{
   align-items: center;
   justify-content: center;
   color: var(--green);
+  font-weight: 700;
+}
+.down{
+  color: var(--brightRed);
+  margin-left: 8px ;
 }
 
+p{
+  margin-left: 8px ;
+}
 `;
+

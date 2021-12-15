@@ -5,6 +5,7 @@ import instagram from '../../assets/social-media-dashboard/images/icon-instagram
 import twitter from '../../assets/social-media-dashboard/images/icon-twitter.svg'
 import youtube from '../../assets/social-media-dashboard/images/icon-youtube.svg'
 import up from '../../assets/social-media-dashboard/images/icon-up.svg'
+import down from '../../assets/social-media-dashboard/images/icon-down.svg'
 
 const Summary = () => {
   return (
@@ -29,7 +30,7 @@ const Summary = () => {
           <p>Instagram</p>
         </header>
         <section>
-          <strong>1987</strong>
+          <strong>1044</strong>
           <p>Followers</p>
         </section>
         <footer>
@@ -43,7 +44,7 @@ const Summary = () => {
           <p>Twitter</p>
         </header>
         <section>
-          <strong>1987</strong>
+          <strong>11k</strong>
           <p>Followers</p>
         </section>
         <footer>
@@ -57,12 +58,12 @@ const Summary = () => {
           <p>Youtube</p>
         </header>
         <section>
-          <strong>1987</strong>
+          <strong>8239</strong>
           <p>Followers</p>
         </section>
         <footer>
-          <img src={up} alt="" />
-          <p>Today</p>
+          <img src={down} alt="" />
+          <p className='down'>Today</p>
         </footer>
       </div>
      
