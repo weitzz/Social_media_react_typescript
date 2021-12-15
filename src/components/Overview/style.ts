@@ -2,11 +2,13 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 2rem;
   margin-top: 4rem;
 
-
+@media(min-width: 768px){
+  grid-template-columns: 1fr 1fr 1fr 1fr
+}
 `;
 export const Title = styled.h2`
 display: flex;
@@ -43,6 +45,10 @@ export const Content = styled.div`
    justify-content: space-around;
    color: ${props => props.theme.colors.textSecondary};
    padding: 1rem 0 1rem 0;
+
+   p{
+    font-weight:700;
+   }
  }
 
  section{
@@ -60,6 +66,7 @@ export const Content = styled.div`
     color: ${props => props.theme.colors.textSecondary};
     text-transform: uppercase;
     letter-spacing: .2rem;
+    
     
   }
 }
