@@ -19,13 +19,4 @@ declare module "styled-components" {
     };
   }
 
-  export interface colorsDefault {
-    toggle: string;
-    limeGreen: string;
-    brightRed: string;
-    facebook: string;
-    twitter: string;
-    instagram: string;
-    youTube: string;
-  }
 }
