@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container} from './style'
 import facebook from '../../assets/social-media-dashboard/images/icon-facebook.svg'
 import instagram from '../../assets/social-media-dashboard/images/icon-instagram.svg'

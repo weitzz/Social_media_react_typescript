@@ -2,7 +2,6 @@ import { useContext } from 'react'
 import { Container ,Content} from './style'
 import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
-import { colorsDefault } from '../../style/colorsDefault'
 
 interface Props {
   toggleTheme(): void
